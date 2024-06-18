@@ -513,12 +513,3 @@ tensor_J = tf.constant([3.,7.,10.])
 # Check the datatypes of each
 numpy_J.dtype,tensor_J.dtype
 
-"""### **Finding Access to GPU's**"""
-
-import tensorflow as tf
-tf.config.list_physical_devices("GPU")
-
-!nvidia-smi
-
-"""### **Note: if you have accss to a CUDA-enabled GPU, Tensorflow will automatically use it whenever posible.**"""
-
